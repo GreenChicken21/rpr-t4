@@ -3,12 +3,15 @@ package ba.unsa.etf.rpr;
 public class Student {
     private String ime;
     private String prezime;
-    private int ECTS;
+    private int index;
+    private Semestar semestar;
+    private
 
-    Student(String ime, String prezime){
+    Student(String ime, String prezime, int index, Semestar semestar){
         setIme(ime);
         setPrezime(prezime);
-        setECTS(0);
+        setIndex(index);
+        setSemestar(semestar);
     }
 
 
@@ -28,11 +31,23 @@ public class Student {
         this.prezime = prezime;
     }
 
-    public int getECTS() {
-        return ECTS;
+    public String getImePrezime(){
+        return this.getIme() + " " + this.getPrezime();
     }
 
-    public void setECTS(int ECTS) {
-        this.ECTS = ECTS;
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public Semestar getSemestar() {
+        return semestar;
+    }
+
+    public void setSemestar(Semestar semestar) {
+        this.semestar = semestar;
     }
 }
