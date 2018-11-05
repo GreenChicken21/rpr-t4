@@ -32,7 +32,7 @@ public class ObavezniPredmet extends Predmet {
     }
 
     @Override
-    public String IspisiStudenteNaPredmetu() {
+    public String ispisiStudenteNaPredmetu() {
         String s = "";
         for(int i = 0; i < studentiNaPredmetu.size(); i++)
             s = s + (i+1) + ". " + studentiNaPredmetu.get(i).getImePrezime() + "\n";
