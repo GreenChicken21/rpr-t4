@@ -4,14 +4,14 @@ public class Student {
     private String ime;
     private String prezime;
     private int index;
-    private Semestar semestar;
+    private Studij studij;
     private
 
-    Student(String ime, String prezime, int index, Semestar semestar){
+    Student(String ime, String prezime, int index, Studij studij){
         setIme(ime);
         setPrezime(prezime);
         setIndex(index);
-        setSemestar(semestar);
+        setStudij(studij);
     }
 
 
@@ -43,11 +43,11 @@ public class Student {
         this.index = index;
     }
 
-    public Semestar getSemestar() {
-        return semestar;
+    public Studij getStudij() {
+        return studij;
     }
 
-    public void setSemestar(Semestar semestar) {
-        this.semestar = semestar;
+    public void setStudij(Studij studij) {
+        this.studij = studij;
     }
 }

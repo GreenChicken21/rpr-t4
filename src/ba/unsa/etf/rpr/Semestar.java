@@ -30,7 +30,15 @@ public class Semestar {
         this.predmet = predmet;
     }
 
-    public void addIzborni(IzborniPredmet izborni){
+    public ArrayList<Predmet> getPredmet() {
+        return predmet;
+    }
+
+    public void addIzborni(Predmet izborni){
+        if(ECTS >= 30) {
+            System.out.println("Nema potreba da dodajes nove predmete imas vec " + ECTS + "  ECTS bodova.");
+            return;
+        }
         predmet.add(izborni);
     }
 
